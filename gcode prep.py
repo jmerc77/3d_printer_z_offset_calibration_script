@@ -68,5 +68,5 @@ if __name__=="__main__":
             else:
                 continue
             fw.write(temp)
-        print("temp_w"+str(max_x-min_x))
+        print("temp_w="+str(max_x-min_x))
     fw.close()

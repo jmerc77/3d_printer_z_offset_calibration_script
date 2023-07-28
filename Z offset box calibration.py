@@ -1,22 +1,22 @@
 import math
 
 #machine settings
-filament_d=1.75 #mm, always more than 0
-nozzle_d=0.4 #mm, always more than 0
-filament_flow=1 #always more than 0
+filament_d=1.75 #filament diameter, mm, always more than 0
+nozzle_d=0.4 #nozzle diameter, mm, always more than 0
+filament_flow=1 #flow, always more than 0
 
 #filament settings
-retract_fr=30 #mm/sec, always more than 0
-retract=2 #mm, always 0 or more
-linear_adv=-1 #0.06 #negative to disable
-nozzle_temp=215 #C, as reccommended by filament
-bed_temp=60 #C, what works best for filament, 0 to disable
+retract_fr=30 #retract speed, mm/sec, always more than 0
+retract=2 #retract amount, mm, always 0 or more
+linear_adv=-1 #linear advance value, negative to disable
+nozzle_temp=215 #nozzle temp, C, as reccommended by filament
+bed_temp=60 #bed temp, C, what works best for filament, 0 to disable
 
 #cali settings
-layer_h=0.2 #mm, always more than 0, half nozzle_d rounded down to nearest step for best results
-z_diff=0.1 #mm, always more than 0, 50 to 75% of layer_h idealy
+layer_h=0.2 #default layer height, mm, always more than 0, half nozzle_d rounded down to nearest step for best results
+z_diff=0.1 #max extra Z to test, mm, always more than 0, 50 to 75% of layer_h idealy
 
-#bed center (mm)
+#bed center position (mm)
 cent_x=150
 cent_y=150
 
